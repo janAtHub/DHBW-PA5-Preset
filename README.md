@@ -31,3 +31,15 @@ Abstract is `inhalt/Abstract.tex`.
 ### Main content
 
 Some more usage examples are in `inhalt/1.tex`. You are advised to split your content into `inhalt/1.tex`, `inhalt/2.tex`, etc., and `\include` it respectively.
+
+### Fork Changes
+- Added some helpfull packages in PA.tex
+- Adding document root to all "standard" .tex files
+- Adding central chapter management
+
+To compile the document from every .tex file add
+```
+%!TEX root = ../../PA.tex
+%!BIB program = biber
+```
+at the top of the file. (Important: check if the path to root is right!)
